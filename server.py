@@ -84,13 +84,6 @@ class fedavg(torch.nn.Module):
             else:
                 raise Exception('Undefined task: '+args['task'])
 
-            
-
-        #os.system(mount_command)
-
-    def predict(self, x): 
-        return self.model(x)
-
 
 class fedensemble(torch.nn.Module):
     def __init__(self):

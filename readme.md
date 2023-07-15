@@ -12,7 +12,7 @@ This repository contains some implementations of the paper [*Fed-ensemble: Ensem
 
 ## Files
 
-The implementation includes fedavg, fedensemble. They are implemented in server.py and client.py
+The implementation includes fedavg, fedensemble. They are implemented in server.py, federatedlearning.py, and client.py
 
 ## Contributing
 

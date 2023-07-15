@@ -1,0 +1,38 @@
+{
+'serial': 1, # change it to arbitrary number
+'modeldir': 'modelsave/', 
+'model_folder': 'modelsave/', # the directory to save and load models
+'DATASET': 'CIFAR10',  # CIFAR10, CIFAR100, and MNIST
+'task': 'classification', 
+'dataset-type':'image',
+'architecture': 'Resnet18',
+'noniid': 0, # 1 means iid partition, 1 means noniid partition where each client only has samples from 2 classes 
+'largest_categories': 2, # the number of classes a client has 
+'load_model': 0, 
+
+'batch_size': 16, 
+'outer_epoch': 100, # number of communication rounds
+'inner_epoch': 10, # number of local updates in each communication round
+'random_epoch': 0, 
+'local': 'sgd', 
+'initial_lr': 0.005, # initial learning rate of local update optimizer
+'weight_decay': 0.001, 
+'momentum':0.0,
+
+
+'fed': 'fedensemble', # fedensemble and fedavg
+'shrinking_factor': 0.999, 
+'enforce_sampling': 1, # 1 often gives better performance 
+'K': 5, # number of models in the ensemble
+'number_of_updates': 10, 
+'mu': 1e-8, 
+
+'number_of_samples_sent_back': 1, 
+'number_of_clients': 10, 
+'number_of_clients_used':10, 
+'variance_ratio': 0.2, 
+
+
+'perturb': 0, 
+'std': 0.0017319642028633274, 
+'total_data': 100}
